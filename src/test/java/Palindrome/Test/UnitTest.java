@@ -8,7 +8,7 @@ public class UnitTest extends Palindrome {
 	@Test
 	public void PalindromePositiveTest() {
 		Assert.assertTrue(isPalindrome("11011"));
-		Assert.assertTrue(isPalindrome("abcba"));
+		Assert.assertTrue(isPalindrome("ébcbe"));
 	}
 	
 	@Test
@@ -23,5 +23,7 @@ public class UnitTest extends Palindrome {
 		Assert.assertFalse(isPalindrome(NullValue));
 		Assert.assertFalse(isPalindrome(""));
 		Assert.assertFalse(isPalindrome("ab ba"));
+		Assert.assertFalse(isPalindrome("!abba!"));
+		Assert.assertFalse(isPalindrome("ab_ba"));
 	}
 }
